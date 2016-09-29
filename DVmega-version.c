@@ -83,7 +83,6 @@ int main() {
 			printf("Invalid response from modem!\n");
 			return -1;
 		}
-		rbuf[rdlen] = 0;
 		int strlen = (int) rbuf[1];
 		printf("Version: %u Description: ", rbuf[3]);
 		unsigned char *p;
