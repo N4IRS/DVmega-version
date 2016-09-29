@@ -96,5 +96,7 @@ int main(int argc, char *argv[]) {
 		printf("\n");
 	} else if (rdlen < 0) {
 		printf("Error from read: %d: %s\n", rdlen, strerror(errno));
+		return -1;
 	}
+	return 0;
 }
