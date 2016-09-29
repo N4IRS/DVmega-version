@@ -23,8 +23,12 @@
 #include <errno.h>
 #include <termios.h>
 
-int main() {
-	char *portname = "/dev/ttyUSB0";
+int main(int argc, char *argv[]) {
+	if (argc != 2) {
+		printf("Usage: %s portname\n", argv[0]);
+		return -1;
+	}
+	char *portname = *(++argv);
 
 	int fd = open (portname, O_RDWR | O_NOCTTY | O_SYNC);
 	if (fd < 0)
