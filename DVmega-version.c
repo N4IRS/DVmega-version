@@ -47,6 +47,7 @@ int main(int argc, char *argv[]) {
 	cfsetospeed(&tty, (speed_t)B115200);
 	cfsetispeed(&tty, (speed_t)B115200);
 
+	tty.c_lflag = 0;
 	tty.c_cflag |= (CLOCAL | CREAD);
 	tty.c_cflag &= ~CSIZE;
 	tty.c_cflag |= CS8;
