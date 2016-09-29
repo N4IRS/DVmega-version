@@ -86,7 +86,7 @@ int main() {
 		int strlen = (int) rbuf[1];
 		printf("Version: %u Description: ", rbuf[3]);
 		unsigned char *p;
-		for (p = rbuf+4; rdlen-- > 0; p++)
+		for (p = rbuf+4; strlen-- > 4; p++)
 			printf("%c", *p);
 		printf("\n");
 	} else if (rdlen < 0) {
