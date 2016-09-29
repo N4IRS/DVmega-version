@@ -9,4 +9,4 @@ Just call "make".
 
 Execute the binary with the MMDVM / DVmega port as command line argument. For example:
 
-```./DVmega-version /dev/ttyUSB0
+   ./DVmega-version /dev/ttyUSB0
