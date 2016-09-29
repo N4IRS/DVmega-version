@@ -75,10 +75,10 @@ int main(int argc, char *argv[]) {
 	tcdrain(fd);
 	usleep(100000);
 
-	unsigned char rbuf[50];
+	unsigned char rbuf[70];
 	int rdlen;
 
-	rdlen = read(fd, rbuf, 50);
+	rdlen = read(fd, rbuf, 70);
 	if (rdlen > 0) {
 		if (rbuf[0] != 0xE0) {
 			printf("Error reading response from modem!\n");
