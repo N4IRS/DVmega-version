@@ -4,7 +4,7 @@ CC = gcc
 CFLAGS = -O2 -Wall
 
 DVmega-version:
-		$(CC) $(CFLAGS) -o DVmega-version DVmega-version.c
+		$(CC) $(CFLAGS) -o MMDVM-version MMDVM-version.c
 
 clean:
-		rm -f *.o *.bak *~ DVmega-version
+		rm -f *.o *.bak *~ MMDVM-version
