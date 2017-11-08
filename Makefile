@@ -1,10 +1,10 @@
-all:	DVmega-version
+all:	MMDVMVersion
 
 CC = gcc
 CFLAGS = -O2 -Wall
 
-DVmega-version:
-		$(CC) $(CFLAGS) -o MMDVM-version MMDVM-version.c
+MMDVMVersion:
+		$(CC) $(CFLAGS) -o MMDVMVersion MMDVMVersion.c
 
 clean:
-		rm -f *.o *.bak *~ MMDVM-version
+		rm -f *.o *.bak *~ MMDVMVersion
